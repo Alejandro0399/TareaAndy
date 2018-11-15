@@ -1,11 +1,3 @@
-//============================================================================
-// Name        : Andy.cpp
-// Author      : 
-// Version     :
-// Copyright   : Your copyright notice
-// Description : Hello World in C++, Ansi-style
-//============================================================================
-
 #include <iostream>
 using namespace std;
 
@@ -17,7 +9,7 @@ void print(int arr[], int* parr);
 int main() {
 	int arr[11] = {10, 7, 8, 9, 0, 1000, 30, 20, 45, 70, 1};
 	int n;
-	cout<<"Ingrese el número que desea encontrar: ";
+	cout<<"Ingrese el nÃºmero que desea encontrar: ";
 	cin>>n;
 	int size = sizeof(arr)/sizeof(int);
 	int* parr = &arr[size];
@@ -25,7 +17,7 @@ int main() {
 	print(arr, parr);
 	cout<<endl;
 	if(Busqueda(arr, n, parr) != -1){
-		cout<<"Si se encontro el número "<<n<<" en el indice: "<<Busqueda(arr, n, parr)<<endl;
+		cout<<"Si se encontro el nÃºmero "<<n<<" en el indice: "<<Busqueda(arr, n, parr)<<endl;
 	}
 	else{
 		cout<<"El numero "<<n<<" no esta en el arreglo."<<endl;
